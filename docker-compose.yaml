@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        CUSTOM_ENV: production
+    ports:
+      - "7001:8080"
+    environment:
+      - CURRENT_ENV=dockerCompose
+  mock-server:
+    build:
+      context: ./mock-server
+      dockerfile: Dockerfile
+    ports:
+      - "7002:5001"

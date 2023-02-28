@@ -1,0 +1,17 @@
+.item {
+  height: 300px;
+  width: 320px !important;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: #f2f7fc;
+}
+
+.itemIcon {
+  margin-left: 110px;
+}
+
+.itemLabel {
+  font-size: 20px;
+}

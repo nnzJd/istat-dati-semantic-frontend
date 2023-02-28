@@ -1,0 +1,18 @@
+.detailsCard {
+  height: 291px;
+}
+
+.description {
+  height: 170px;
+  color: #19191a;
+}
+
+.scrollable {
+  height: 170px;
+  overflow: auto;
+}
+
+.descriptionText {
+  font-size: 18px;
+  line-height: 21px;
+}

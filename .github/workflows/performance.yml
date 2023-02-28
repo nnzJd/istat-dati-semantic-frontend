@@ -1,0 +1,18 @@
+name: Performance Tests
+
+on:
+    schedule:
+      - cron: '0 0 * * *'
+    workflow_dispatch:
+
+jobs:
+  load-test:
+    name: Load Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Load Tests
+        uses: k6io/action@v0.2.0
+        with:
+          filename: ./performance/script.js                   
